@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tictactoe</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <section id="messageArea" class="hidden">
+            <h2 id="winningMessage"></h2>
+            <button id="rematch">rematch</button>
+            <button id="reset">reset</button>
+        </section>
+    </header>
+    <main>
+            <form>
+                <section id="playerOneForm">
+                    <fieldset>
+                        <legend>Player One Select:</legend>
+                            <div class="flexInputContainer">
+                                <div>
+                                    <label>Name:</label>
+                                    <input type="text" name="playerOneName">
+                                </div>
+                                <div>
+                                    <input type="radio" name="playerOneTeam" value="x">
+                                    <label>X's</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="playerOneTeam" value="o">
+                                    <label>O's</label>                             
+                                </div>
+                            </div>
+                    </fieldset>
+                </section>
+                <section id="playerTwoForm">
+                    <fieldset>
+                        <legend>Player Two Select:</legend>
+                            <div class="flexInputContainer">
+                                <div>
+                                    <label>Name:</label>
+                                    <input type="text" name="playerTwoName">
+                                </div>
+                                <div>
+                                    <input type="radio" name="playerTwoTeam" value="x">
+                                    <label>X's</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="playerTwoTeam" value="o">
+                                    <label>O's</label>   
+                                </div>
+                            </div>
+                    </fieldset>
+                </section>
+                <section id="playButtonContainer">
+                    <input type="submit" value="play">
+                </section>
+            </form>
+            <section id="gameArea" class="hidden">
+                <div id="one" class="playContainer"></div>
+                <div id="two" class="playContainer"></div>
+                <div id="three" class="playContainer"></div>
+                <div id="four" class="playContainer"></div>
+                <div id="five" class="playContainer"></div>
+                <div id="six" class="playContainer"></div>
+                <div id="seven" class="playContainer"></div>
+                <div id="eight" class="playContainer"></div>
+                <div id="nine" class="playContainer"></div>
+            </section>
+    </main>
+    <footer>
+        <h3>Made with <span class="heart"></span> by Alec Moschetti</h3>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
